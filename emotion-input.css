@@ -1,0 +1,28 @@
+.emotion-input {
+  --cell-size: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, var(--cell-size));
+  grid-template-rows: repeat(3, var(--cell-size));
+  grid-gap: 2px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.emotion-input label {
+  border: 1px solid black;
+  background:gray;
+  text-align: center;
+  vertical-align: middle;
+  padding: calc(0.1 * var(--cell-size));
+  padding-top: calc(0.13 * var(--cell-size));
+  line-height: calc(0.8 * var(--cell-size));
+  font-size: calc(0.5 * var(--cell-size));
+}
+
+.emotion-input input {
+  display: none;
+}
+
+.emotion-input label.checked {
+  background: lightgray;
+}
